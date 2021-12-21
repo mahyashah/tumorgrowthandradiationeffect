@@ -1,0 +1,50 @@
+{
+  "shape": [50, 50],
+  "wrapped": true,
+  "cells": {
+    "default": {
+      "delay": "inertial",
+      "cell_type": "sird",
+      "state": {
+        "totalcells": 100,
+        "P1cells": 0,
+        "P2cells": 0,
+        "normalcells": 100,
+        "CSC": 0,
+        "stradio":0
+      },
+      "config": {
+        "migP1": 0.1,
+        "migP2": 0.3,  
+        "migCSC": 0.5,      
+        "recovP1":0.05,
+        "recovP2":0.02,
+        "radiorecovP1":4,
+        "radiorecovP2":2,
+	"radiorecovcsc":13.7
+      },
+      "neighborhood": [
+        {
+          "type": "von_neumann",
+          "range": 1,
+          "vicinity": {
+            "evacuation": 0.5
+          }
+        }
+      ]
+    },
+    "epicenter": {
+      "state": {
+        "totalcells": 100,
+        "P1cells": 7,
+        "P2cells": 3,
+        "normalcells": 83,
+        "CSC": 7,
+        "stradio":0
+      }
+    }
+  },
+  "cell_map": {
+    "epicenter": [[24,24],[10,10],[13,13],[2,2]]
+  }
+}
